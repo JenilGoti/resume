@@ -15,7 +15,6 @@ mongoose.connect("mongodb+srv://jenil:jenil123@cluster0.jp9lx8h.mongodb.net/resu
 const userName="jenilgoti";
 const passWD="Jenil@23";
 
-
 const mailSchema= {
   name : String,
   email : String,
