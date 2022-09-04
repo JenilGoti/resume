@@ -8,7 +8,7 @@
   "author": "jenil goti",
   "license": "ISC",
   "engines": {
-    "node": "18.7.0"
+    "node": "18.7.x"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
