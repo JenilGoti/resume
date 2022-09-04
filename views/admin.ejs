@@ -1,0 +1,32 @@
+<%- include("header") -%>
+<section id="hero" class="d-flex flex-column align-items-center justify-content-center">
+  <h1>Admin Log-in</h1>
+
+
+<div>
+  <form class="admin-form" action="/loginreq" method="post">
+    <div class="form-group">
+      <label for="userName" style=" color:white">User Name</label>
+      <input type="text" name="userName" class="form-control" id="user-name" placeholder="USER NAME" required>
+    </div>
+    <div class="form-group mt-3">
+      <label for="pwd" style=" color:white">password</label>
+      <input type="password" class="form-control" name="passWD" id="password" placeholder="PASSWORD" required>
+    </div>
+    <% if(fail==true){ %>
+      <div class="worning">
+        <label for="worning" style="color:red">*Wrong user-name or password</label>
+
+      </div>
+
+    <%}%>
+    <div class="form-group mt-3">
+      <button type="submit" name="button">Log-in</button>
+    </div>
+  </form>
+
+
+
+</div>
+</section>
+<%- include("footer") -%>
