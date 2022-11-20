@@ -1,0 +1,92 @@
+<%- include("header") -%>
+
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <div class="logo">
+            <h1><a href="/">Jenil GOti</a></h1>
+        </div>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto " href="/#hero">Home</a></li>
+                <li><a class="nav-link scrollto" href="/#about">About</a></li>
+                <li><a class="nav-link scrollto" href="/#resume">Resume</a></li>
+                <li><a class="nav-link scrollto" href="/#portfolio">Portfolio</a></li>
+                <ul>
+
+                    <li><a class="nav-link scrollto" href="/#contact">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+    </div>
+</header><!-- End Header -->
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Portfolio Details</h2>
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li>Portfolio Details</li>
+                </ol>
+            </div>
+
+        </div>
+    </section><!-- Breadcrumbs Section -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-8">
+                    <div class="portfolio-details-slider swiper">
+                        <div class="swiper-wrapper align-items-center">
+                            <%for(var i=0;i<images.length;i++){%>
+                            <div class="swiper-slide">
+                                <img src="<%=images[i]%>" alt="">
+                            </div>
+                            <%}%>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3><%=pName%></h3>
+                            <ul>
+                                <li><strong>Category</strong>: <%=pCategory%></li>
+                                <li><strong>Project URL</strong>: <a href="<%=pUrl%>"><%=pUrl%></a></li>
+                                <li><strong>github URL</strong>: <a href="<%=gitUrl%>"><%=gitUrl%></a></li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-description">
+                            <h2>Project Description</h2>
+                            <%for(var i=0;i<detail.length;i++){%>
+                            <p>
+                                <%=detail[i]%>
+                            </p>
+                            <%}%>
+                           
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+    </section><!-- End Portfolio Details Section -->
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<%- include("footer") -%>
