@@ -36,7 +36,7 @@ app.get("/profile/:name", function (req, res) {
       json = {
         pName: 'Shop app',
         pCategory: 'web Application',
-        pUrl: 'https://shop-app-by-jenil-goti.herokuapp.com',
+        pUrl: 'https://shop-app-5p6y.onrender.com/products',
         gitUrl: 'https://github.com/JenilGoti/shop-app-by-jenil-goti',
         images: ['/img/portfolio/shopping-apps.jpg',
           '/img/portfolio/shop2.png',
@@ -56,7 +56,7 @@ app.get("/profile/:name", function (req, res) {
       json = {
         pName: 'NESTSCOUT',
         pCategory: 'web Application',
-        pUrl: 'https://reliable-real--estate-portal.herokuapp.com',
+        pUrl: 'https://nestscout.onrender.com/',
         gitUrl: 'https://github.com/JenilGoti/Advanced-Reliable-Real-Estate-Portal',
         images: ['/img/portfolio/nestscout.png',
           '/img/portfolio/nestscout1.png',
